@@ -31,7 +31,7 @@ const Newsletter = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your mail address"
                 required
-                className="  px-3 py-3 w-full placeholder:text-sm text-base bg-white focus:outline-none  text-gray-700 placeholder-gray-400"
+                className="  px-3 py-3 w[80%] md:w-full placeholder:text-sm text-base bg-white focus:outline-none  text-gray-700 placeholder-gray-400"
               />
               
               <button

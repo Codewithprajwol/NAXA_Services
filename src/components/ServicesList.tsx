@@ -56,7 +56,7 @@ const ServicesList = () => {
             <img src="/top.svg" alt="top right corner decoration" />
         </div>
        
-        <div className='hidden sm:block left-0 top-[150vh] absolute z-0'>
+        <div className='hidden sm:block left-0 top-[18%] absolute z-0'>
             <img src="/middledeco.svg" alt="middle left corner decoration" />
         </div>
         <div className='hidden sm:block left-0 bottom-[10vh] absolute z-0'>
