@@ -1,74 +1,62 @@
-# React + TypeScript + Vite
+# NAXA Services - Frontend Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ This is a React application I built it showing the NAXA's services. It also includes a newsletter subscription form, and shows office location on a map.
 
-Currently, two official plugins are available:
+## What This App Does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Shows all the services NAXA offers with nice cards and descriptions
+- Has a cool hero section with background image
+- Displays an interactive map showing NAXA's office location
+- Newsletter subscription section for updates
+- Fully responsive - works great on mobile, tablet, and desktop
+- Smooth scroll-to-top button when you scroll down
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I used these technologies:
 
-## Expanding the ESLint configuration
+- **React 19** with **TypeScript** - For building the UI
+- **Vite** - Super fast build tool
+- **Tailwind CSS** - For styling (no custom CSS files!)
+- **Redux Toolkit** - State management
+- **React Query (TanStack Query)** - Fetching data from API
+- **Leaflet & React-Leaflet** - Interactive maps
+- **Lucide React** - Beautiful icons
+- **Axios** - Making API calls
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Make sure you have Node.js installed on your computer. I used Node.js v20 or higher.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/Codewithprajwol/NAXA_Services.git
+   cd naxa-test
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Install all dependencies**
+   ```bash
+   npm install
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# NAXA_Services
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   
+   The app will be running at `http://localhost:5173`
+
+That's it! You should see the application running.
+
+5. **DEMO live link**
+
+  You can see the demo by click below link:
+
+  https://naxaservices.netlify.app/
+
