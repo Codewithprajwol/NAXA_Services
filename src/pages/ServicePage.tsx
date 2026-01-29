@@ -1,4 +1,13 @@
+import { useSelector } from "react-redux";
+import { useServices } from "../Hooks/useServices"
+import type { RootState } from "../store";
+
+
 const ServicePage = () => {
+    const {isLoading, isError}=useServices();
+    console.log(isLoading, isError);
+    const services = useSelector((state: RootState) => state.services);
+    console.log('services in service page', services);
   return (
     <div className=" w-full bg-[url('/Images/landing_page.jpeg')] bg-cover   bg-center
   sm:bg-top-left pointer-events-none h-[90vh]">
@@ -44,7 +53,9 @@ const ServicePage = () => {
         </div>
         </div>
       </div>
+      
     </div>
+
   )
 }
 
