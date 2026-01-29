@@ -46,13 +46,12 @@ const Map = () => {
                     alt="NAXA Logo" 
                     className="h-8 w-auto"
                   />
-                  {/* <h3 className="font-bold text-lg text-gray-900">NAXA</h3> */}
                 </div>
                 
                 <div className="space-y-2 text-sm text-gray-700">
                   <p className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span><span className="font-semibold">Address:</span> Jwagal, Lalitpur, Nepal</span>
+                    <span><span className="font-semibold">Address:</span> Omkareshwor Mandir Road, Kathmandu 44600</span>
                   </p>
                   
                   <p className="flex items-start gap-2">
@@ -88,10 +87,10 @@ const Map = () => {
                     <span>
                       <span className="font-semibold">Phone:</span>{' '}
                       <a 
-                        href="tel:+97715970007" 
+                        href="tel:+977014516543" 
                         className="text-blue-600 hover:underline"
                       >
-                        +977-1-5970007
+                        +977-01-4516543
                       </a>
                     </span>
                   </p>

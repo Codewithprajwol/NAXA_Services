@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ArrowRight } from 'lucide-react';
 
 const Newsletter = () => {
   const [email, setEmail] = useState('');
@@ -35,9 +36,10 @@ const Newsletter = () => {
               
               <button
                 type="submit"
-                className="bg-yellow-400 block text-center hover:bg-yellow-500 text-blue-900 font-bold text-base  px-6 py-2 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-yellow-400 cursor-pointer group relative hover:bg-yellow-500 text-blue-900 font-bold text-base px-6 py-2 transition-all duration-300 shadow-lg flex items-center overflow-hidden"
               >
-                Subscribe
+                <span className="relative z-10">Subscribe</span>
+                <ArrowRight className="w-0 h-5 opacity-0 transition-all duration-300 transform -translate-x-2 group-hover:w-5 group-hover:opacity-100 group-hover:translate-x-0 group-hover:ml-2" />
               </button>
             </form>
           </div>
