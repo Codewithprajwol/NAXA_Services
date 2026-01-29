@@ -1,4 +1,5 @@
 import ServicesList from "../components/ServicesList";
+import Newsletter from "../components/Newsletter";
 
 
 const ServicePage = () => {
@@ -51,6 +52,7 @@ const ServicePage = () => {
       
     </div>
      <ServicesList />
+     <Newsletter />
    </div>
 
   )
