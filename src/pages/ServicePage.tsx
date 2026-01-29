@@ -1,6 +1,7 @@
 import ServicesList from "../components/ServicesList";
 import Newsletter from "../components/Newsletter";
 import Map from "../components/Map";
+import ScrollToTop from "../components/ScrollToTop";
 
 
 const ServicePage = () => {
@@ -57,6 +58,7 @@ const ServicePage = () => {
      <Newsletter />
      </div>
       <Map />
+      <ScrollToTop />
    </div>
 
   )
