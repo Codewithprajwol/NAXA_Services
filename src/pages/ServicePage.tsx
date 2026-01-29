@@ -4,7 +4,7 @@ import Newsletter from "../components/Newsletter";
 
 const ServicePage = () => {
   return (
-   <div>
+   <div >
      <div className=" w-full bg-[url('/Images/landing_page.jpeg')] bg-cover   bg-center
   sm:bg-top-left pointer-events-none h-[90vh]">
     <div className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-24">
@@ -52,7 +52,9 @@ const ServicePage = () => {
       
     </div>
      <ServicesList />
+     <div className="py-10">
      <Newsletter />
+     </div>
    </div>
 
   )

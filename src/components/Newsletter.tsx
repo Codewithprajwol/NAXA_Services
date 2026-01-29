@@ -10,7 +10,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="w-full max-w-screen-2xl mx-auto mb-12 px-4 sm:px-6 lg:px-24 relative overflow-hidden ">
+    <div className="w-full max-w-screen-2xl mx-auto mb-24 px-4 sm:px-6 lg:px-24 relative overflow-hidden  ">
       <div 
         className="relative bg-[url('/Images/formbgimage.png')] bg-cover py-12 md:py-24 rounded-r-3xl">
           <div className="text-center space-y-6 md:space-y-8">
@@ -23,7 +23,7 @@ const Newsletter = () => {
               news & updates.
             </p>
 
-            <form onSubmit={handleSubmit} className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-4">
+            <form onSubmit={handleSubmit} className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-6">
               <input
                 type="email"
                 value={email}
