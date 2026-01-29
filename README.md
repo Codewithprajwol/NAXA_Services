@@ -35,7 +35,7 @@ Make sure you have Node.js installed on your computer. I used Node.js v20 or hig
 1. **Clone this repository**
    ```bash
    git clone https://github.com/Codewithprajwol/NAXA_Services.git
-   cd naxa-test
+   cd NAXA_Services
    ```
 
 2. **Install all dependencies**
