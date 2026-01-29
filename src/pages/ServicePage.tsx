@@ -1,5 +1,6 @@
 import ServicesList from "../components/ServicesList";
 import Newsletter from "../components/Newsletter";
+import Map from "../components/Map";
 
 
 const ServicePage = () => {
@@ -55,6 +56,7 @@ const ServicePage = () => {
      <div className="py-10">
      <Newsletter />
      </div>
+      <Map />
    </div>
 
   )
