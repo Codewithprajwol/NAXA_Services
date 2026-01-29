@@ -2,14 +2,17 @@ import type { Service } from "../types";
 
 interface ServiceCardProps {
   service: Service;
+  index: number;
 }
 
-const ServiceCard = ({ service }: ServiceCardProps) => {
+const ServiceCard = ({ service, index }: ServiceCardProps) => {
+  const isEven = index % 2 === 0;
+  
   return (
-    <div className="w-full bg-transparent py-16 md:py-24 px-2 z-1 relative">
+    <div className="w-full bg-transparent py-10 md:py-16 px-2 z-1 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
-          <div className="order-2 lg:order-1 flex justify-center lg:justify-start">
+          <div className={`order-2 ${isEven ? 'lg:order-1' : 'lg:order-2'} flex justify-center lg:justify-start`}>
             <div className="relative w-full max-w-md">
               <img 
                 src={service.icon} 
@@ -19,7 +22,7 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2 space-y-6">
+          <div className={`order-1 ${isEven ? 'lg:order-2' : 'lg:order-1'} space-y-6`}>
             <div className="flex justify-center lg:justify-start">
                 <img 
                   src={service.photo} 
