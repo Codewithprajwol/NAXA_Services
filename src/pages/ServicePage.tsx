@@ -6,8 +6,8 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const ServicePage = () => {
   return (
-   <div >
-     <div className=" w-full bg-[url('/Images/landing_page.jpeg')] bg-cover   bg-center
+   <div className="w-full relative bg-[#F4F4F4] " >
+     <div className=" w-full bg-[url('/Images/landing_page.jpeg')] bg-cover  bg-center
   sm:bg-top-left pointer-events-none h-[90vh]">
     <div className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-24">
         <div className="p-4">
@@ -26,12 +26,12 @@ const ServicePage = () => {
          <h1 className="text-3xl md:text-4xl font-normal text-black leading-tight mb-6 md:mb-8">
   <span className="md:block">
     At <span className="text-blue-600 ">NAXA</span>, we work on{' '}
-    <span className="text-blue-600 ">ideas</span>; ideas
+    <span className="text-blue-600 ">ideas</span>; ideas {' '}
   </span>
 
   <span className="md:block">
     that can provide{' '}
-    <span className="text-blue-600 font-semibold">simple solutions</span> to
+    <span className="text-blue-600 font-semibold">simple solutions</span> to {' '}
   </span>
 
   <span className="md:block">
@@ -41,7 +41,7 @@ const ServicePage = () => {
 
          <p className="text-black text-sm md:text-sm lg:text-md max-w-4xl leading-relaxed font-semibold">
   <span className="md:block">
-    We work as a team to generate, explore, build and validate ideas. We also contextualize
+    We work as a team to generate, explore, build and validate ideas. We also contextualize {' '}
   </span>
   <span className="md:block">
     innovations around the world to find the best fitting solutions to local problems.

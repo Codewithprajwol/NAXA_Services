@@ -28,7 +28,7 @@ const ServicesList = () => {
       );
         return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB);
     });
-  }, [services]);
+  }, [services]); // this is done just for ordering the services according to actual naxa service page
 
   if (isLoading) {
     return (
